@@ -1,3 +1,86 @@
 page-home {
+    ion-content{
+        background: url("/../../assets/imgs/stefan-stefancik-257625-unsplash.jpg");
+        background-size: cover;
+        font-size: 10px !important;
+    }
+    .contentflex{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(rgba(153, 9, 16, 0.6),rgba(255, 255, 255, 0.103));
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+    .crest{
+        height: 15rem;
+        width: 15rem;
+        background: linear-gradient(transparent, rgba(248, 220, 143, 0.6));
+        padding: 1rem;
+        border-radius: 50%;
+    }
+    .imageflex{
+        display: flex;
+        justify-content: center;
+    }
 
+    .heading, .quote{
+        color: white;
+        text-align: center;
+    }
+
+    .quote{
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+
+    .cardflex{
+        display: flex;
+        flex-direction: row;
+        height: 8rem;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: .3rem .6rem 3rem rgba(0, 0, 0, 0.815);
+        border-radius: 0rem .4rem .4rem  0rem;
+        transition: all ease .4s;
+    }
+
+    .cardflex:hover{
+        transform: translateY(-.3rem);
+    }
+
+    .cardflex:active{
+        transform: translateY(.2rem);
+    }
+
+    .cardimage{
+        height: 100%;
+        width: 15rem;
+        border-right: .01rem #666 solid; 
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .cardcontent{
+        padding-left: .5rem;
+        font-size: 1.5rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .course{
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: .15rem;
+    }
+    
+    .desc{
+        padding: 0;
+        margin: 0;
+        color: #666;
+    }
+
+    .price{
+        padding: 0;
+        margin: 0;
+        color: #990910;
+    }
 }
