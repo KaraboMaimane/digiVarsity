@@ -20,21 +20,21 @@
       <ion-list>
         <ion-item>
           <ion-label>Course Name</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" (change)="assignName($event)"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label>Description</ion-label>
-          <ion-textarea></ion-textarea>
+          <ion-textarea (change)="assignDescription($event)"></ion-textarea>
         </ion-item>
 
         <ion-item>
           <ion-label>Price</ion-label>
-          <ion-input type="number" min="1" max="5" placholder></ion-input>
+          <ion-input type="number" min="1" max="5" (change)="assignPrice($event)"></ion-input>
         </ion-item>
       </ion-list>
     </div>
-
+    <button ion-button (click)="add()">Add Content</button>
   </div>
 
 </ion-content>

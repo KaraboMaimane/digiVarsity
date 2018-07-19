@@ -15,4 +15,7 @@ export class Course{
 
 let courseArray = [];
 
+let course = new Course("../../assets/imgs/stefan-stefancik-257625-unsplash.jpg" ,"BSc Computer Sciences", "Computer Science is the study of computers and computational systems", 2000);
+courseArray.push(course);
+
 export default courseArray;

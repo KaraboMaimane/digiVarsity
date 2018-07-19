@@ -9,7 +9,7 @@
 
       <h1 class="heading">Mzansi Digiversity</h1>
       <p class="quote">Working Together we can create a bigger digital footprint</p>
-      <div class="cardflex">
+      <div class="cardflex" (click)="details(i)" *ngFor="let course of courseArray; let i = index">
         <div class="image">
           <img [src]="course.url" alt="" class="cardimage">
         </div>

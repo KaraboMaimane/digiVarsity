@@ -37,18 +37,20 @@ page-home {
         display: flex;
         flex-direction: row;
         height: 8rem;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: .3rem .6rem 3rem rgba(0, 0, 0, 0.815);
+        background: rgba(255, 255, 255, 0.9); 
         border-radius: 0rem .4rem .4rem  0rem;
         transition: all ease .4s;
+        margin-bottom: .5rem;
     }
 
     .cardflex:hover{
         transform: translateY(-.3rem);
+        box-shadow: .3rem .6rem 1rem rgba(255, 254, 254, 0.3);
     }
 
     .cardflex:active{
         transform: translateY(.2rem);
+        box-shadow: .3rem .6rem 1rem rgba(255, 254, 254, 0.637);
     }
 
     .cardimage{

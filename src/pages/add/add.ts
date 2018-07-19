@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import courseArray, { Course } from '../../assets/resources/course';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the AddPage page.
@@ -40,8 +42,14 @@ export class AddPage {
     }
   }
 
-  rateSet(event){
-    this.ratingScore = event.target.value;
-    console.log(this.ratingScore);
+  assignName(event){this.courseName = event.target.value;}
+  assignDescription(event){this.decription = event.target.value}
+  assignPrice(event){this.pricing = event.target.value}
+  
+  add(){
+    let course = new Course(this.url, this.courseName, this.decription, this.pricing);
+    this.navCtrl.push(HomePage,{
+      course: course
+    });
   }
 }
