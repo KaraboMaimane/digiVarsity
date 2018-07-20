@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content padding>
   <div class="contentflex">
     <div class="content">
       <div class="imageflex">
@@ -9,13 +9,14 @@
 
       <h1 class="heading">Mzansi Digiversity</h1>
       <p class="quote">Working Together we can create a bigger digital footprint</p>
+      <p class="coursesText" text-center>Courses</p>
       <div class="cardflex" (click)="details(i)" *ngFor="let course of courseArray; let i = index">
         <div class="image">
           <img [src]="course.url" alt="" class="cardimage">
         </div>
         <div class="cardcontent">
           <p class="course">{{ course.name }}</p>
-          <p class="desc">{{ course.description }} <br> <span class="price">ZAR {{ course.pricing }}</span>   </p>
+          <p class="desc">{{ course.description }} <span class="price">ZAR {{ course.pricing }}</span>   </p>
         </div>
       </div>
       <button ion-button block (click)="addPage()">Add A Course</button>

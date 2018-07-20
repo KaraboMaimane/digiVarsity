@@ -12,11 +12,17 @@
 
 </ion-header>
 
-<ion-content>
-  <div class="contentflex">
-    <div class="contentflex">
-      <img [src]="url" alt="">
-      <input type="file" accept="image/jpg, image/png" (change)="insertImage($event)">
+<ion-content padding>
+
+
+      <div class="imageflex">
+        <div class="imagecontainer">
+            <img [src]="url" alt=""><br>
+            <input type="file" accept="image/jpg, image/png" (change)="insertImage($event)" class="imginput">
+        </div>
+      </div>
+
+
       <ion-list>
         <ion-item>
           <ion-label>Course Name</ion-label>
@@ -33,8 +39,8 @@
           <ion-input type="number" min="1" max="5" (change)="assignPrice($event)"></ion-input>
         </ion-item>
       </ion-list>
-    </div>
-    <button ion-button (click)="add()">Add Content</button>
-  </div>
+      <button ion-button block (click)="add()">Add Course</button>
+
+
 
 </ion-content>
